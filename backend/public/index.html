@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Language Tutor</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🌐 AI-Powered Language Tutor</h1>
+
+    <!-- Language & Level -->
+    <div class="controls">
+      <div>
+        <label for="language">Language:</label>
+        <select id="language">
+          <option>English</option>
+          <option>Spanish</option>
+          <option>French</option>
+          <option>German</option>
+          <option>Hindi</option>
+          <option>Tamil</option>
+        </select>
+      </div>
+      <div>
+        <label for="level">Level:</label>
+        <select id="level">
+          <option value="beginner">Beginner</option>
+          <option value="intermediate">Intermediate</option>
+          <option value="advanced">Advanced</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Recorder with Circular Animation -->
+    <div class="recorder">
+      <div class="record-circle" id="recordCircle">
+        <button id="recordBtn">🎤</button>
+      </div>
+      <button id="sendBtn">📤 Send to Tutor</button>
+    </div>
+
+    <!-- Transcript -->
+    <div class="output">
+      <h2>📝 Transcript</h2>
+      <p id="transcript">—</p>
+      <small id="confidence"></small>
+    </div>
+
+    <!-- Feedback -->
+    <div class="output">
+      <h2>🤖 AI Feedback</h2>
+      <pre id="feedback">No feedback yet.</pre>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
